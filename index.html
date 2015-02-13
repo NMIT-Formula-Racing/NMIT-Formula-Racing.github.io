@@ -19,6 +19,7 @@
 	<script type="text/javascript" src="resources/jquery.pagepiling.min.js"></script>
 	<script type="text/javascript" src="resources/fotorama.js"></script>
 	<script type="text/javascript" src="resources/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 
@@ -28,7 +29,7 @@
 	    	$('#pagepiling').pagepiling({
 	    		menu: '#menu',
 	    		anchors: ['page1', 'page2', 'page3', 'page4'],
-			    sectionsColor: ['#424242', '#ee005a', '#2C3E50', '#39C'],
+			    sectionsColor: ['#424242', '#ccdcfc', '#2C3E50', '#39C'],
 			    navigation: {
 			    	'position': 'right',
 			   		'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']
@@ -66,26 +67,37 @@
     	#team1{
     		flex:1;
     		margin-left: 5%;
-    		border:2px solid blue;
+    		//border:2px solid blue;
     	}
     	#team1:hover{
+    		/*
 			-webkit-flex-grow: 5;
 			transition: all 2s ease;
  			background-color: blue;
+ 			*/
     	}
     	#team2:hover{
+    		/*
 			-webkit-flex-grow: 5;
 			transition: all 2s ease;
  			background-color: green;
+ 			*/
     	}
     	#team2{
     		flex:1;
     		margin-right: 5%;
-    		border:2px solid black;
+    		//border:2px solid black;
     	}
     	#test{
     		width:80%;
     	}
+    	.link {
+  			stroke: #000;
+		}
+		.node text {
+  			pointer-events: none;
+  			font: 10px sans-serif;
+		}
     </style>
 </head>
 <body>
@@ -117,8 +129,8 @@
 	    	<div class="intro">
 	    		<h1>Teams</h1>
 	    		<div id="teams">
-	    			<div id="team1">Query</div>
-	    			<div id="team2">Test</div>
+	    			<div id="team1"><h2>Aryan</h2></div>
+	    			<div id="team2"><h2>Bleh</h2></div>
 	    		</div>
 	    	</div>
 	    </div>
@@ -138,5 +150,12 @@
 	    	</div>
 	    </div>
 	</div>
+	<script type="text/javascript" src="resources/graph.js"></script>
+	<script>
+		$(document).ready(function(){
+			graph("#team1","resources/team1.json")
+			graph("#team2","resources/team2.json")
+		});
+	</script>
 </body>
 </html>
