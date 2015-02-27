@@ -1,156 +1,119 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!doctype html>
+<html lang="en" class="no-js">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Nitte Car</title>
-	<meta name="author" content="Kshitij Karthick" />
-	<meta name="description" content="Race Car" />
-	<meta name="keywords"  content="Nitte Car" />
-	<meta name="Resource-type" content="Document" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="resources/css.css?family=Lato:300,400,700" />
-	<link rel="stylesheet" type="text/css" href="resources/jquery.pagepiling.css" />
-	<link rel="stylesheet" type="text/css" href="resources/index.css" />
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|Merriweather:400italic,400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="resources/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="resources/fotorama.css">
-
+	<link rel="stylesheet" href="resources/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="resources/style.css"> <!-- Resource style -->
+	<script src="resources/modernizr.js"></script> <!-- Modernizr -->
 	<script type="text/javascript" src="resources/jquery.min.js"></script>
-	<script type="text/javascript" src="resources/jquery.pagepiling.min.js"></script>
-	<script type="text/javascript" src="resources/fotorama.js"></script>
+  	<script type="text/javascript" src="resources/fotorama.js"></script>
 	<script type="text/javascript" src="resources/bootstrap.min.js"></script>
 	<script type="text/javascript" src="resources/d3.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-
-			/*
-			* Plugin intialization
-			*/
-	    	$('#pagepiling').pagepiling({
-	    		menu: '#menu',
-	    		anchors: ['page1', 'page2', 'page3', 'page4'],
-			    sectionsColor: ['#424242', '#ccdcfc', '#2C3E50', '#39C'],
-			    navigation: {
-			    	'position': 'right',
-			   		'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']
-			   	},
-			    afterRender: function(){
-			    	$('#pp-nav').addClass('custom');
-			    },
-			    afterLoad: function(anchorLink, index){
-			    	if(index>1){
-			    		$('#pp-nav').removeClass('custom');
-			    	}else{
-			    		$('#pp-nav').addClass('custom');
-			    	}
-			    }
-			});
-			/*
-		    * Internal use of the demo website
-		    */
-		    $('#showExamples').click(function(e){
-				e.stopPropagation();
-				e.preventDefault();
-				$('#examplesList').toggle();
-			});
-
-			$('html').click(function(){
-				$('#examplesList').hide();
-			});
-	    });
-    </script>
+	<title>Race Car</title>
     <style>
-    	#teams{
+        #teams{
     		display:flex;
     		min-height:500px;
     	}
     	#team1{
     		flex:1;
     		margin-left: 5%;
-    		//border:2px solid blue;
+    		/*border:2px solid blue;*/
     	}
-    	#team1:hover{
-    		/*
-			-webkit-flex-grow: 5;
-			transition: all 2s ease;
- 			background-color: blue;
- 			*/
-    	}
-    	#team2:hover{
-    		/*
-			-webkit-flex-grow: 5;
-			transition: all 2s ease;
- 			background-color: green;
- 			*/
-    	}
-    	#team2{
+        #team2{
     		flex:1;
     		margin-right: 5%;
-    		//border:2px solid black;
+    		/*border:2px solid black;*/
     	}
-    	#test{
-    		width:80%;
-    	}
-    	.link {
-  			stroke: #000;
-		}
-		.node text {
-  			pointer-events: none;
-  			font: 10px sans-serif;
-		}
     </style>
 </head>
 <body>
-	<ul id="menu">
-		<li data-menuanchor="page1" class="active"><a href="#page1">Cars</a></li>
-		<li data-menuanchor="page2"><a href="#page2">Teams</a></li>
-		<li data-menuanchor="page3"><a href="#page3">Events</a></li>
-		<li data-menuanchor="page4"><a href="#page4">Contact Us</a></li>
-	</ul>
-	<div id="pagepiling">
-	    <div class="section" id="section1">
-	    	<center>
-	    	<div id="gallery">
-			<!-- Add images to <div class="fotorama"></div>. -->
-				<div class="fotorama" data-allowfullscreen="true" data-width="80%" data-height="85%" data-ratio="800/600" data-transition="crossfade" data-loop="true" data-autoplay="3000" data-nav="thumbs"
-				data-arrows="true" data-click="true" data-swipe="true" data-navposition="top">
-  					<img src="http://s.fotorama.io/okonechnikov/29-lo.jpg">
-  					<img src="http://s.fotorama.io/okonechnikov/17-lo.jpg">
-  					<img src="http://s.fotorama.io/1.jpg">
-  					<img src="http://s.fotorama.io/okonechnikov/20-lo.jpg">
-  					<img src="http://s.fotorama.io/okonechnikov/14-lo.jpg">
-  					<img src="http://s.fotorama.io/2.jpg">
-  					<img src="http://s.fotorama.io/okonechnikov/30-lo.jpg">
+	<div class="projects-container">
+		<ul>
+			<li class="cd-single-project">
+				<div class="cd-title">
+					<h2>Cars</h2>
+					<p>Slideshow</p>
+				</div> <!-- .cd-title -->
+
+				<div class="cd-project-info">
+					<center>
+	    		<div id="gallery">
+				<!-- Add images to <div class="fotorama"></div>. -->
+					<div class="fotorama" data-allowfullscreen="true" data-width="100%" data-height="100%" data-ratio="800/600" data-transition="crossfade" data-loop="true" data-autoplay="3000" data-nav="thumbs" data-arrows="true" data-click="true" data-swipe="true" data-navposition="top">
+  						<img src="/resources/images/1.jpg">
+  						<img src="/resources/images/2.jpg">
+  						<img src="/resources/images/3.jpg">
+  						<img src="/resources/images/4.jpg">
+  						<img src="/resources/images/5.jpg">
+  						<img src="/resources/images/6.jpg">
+  						<img src="/resources/images/7.jpg">
+  						<img src="/resources/images/8.jpg">
+  						<img src="/resources/images/9.jpg">
+  						<img src="/resources/images/10.jpg">
+					</div>
 				</div>
-			</div>
 			</center>
-	    </div>
-	    <div class="section" id="section2">
-	    	<div class="intro">
-	    		<h1>Teams</h1>
-	    		<div id="teams">
-	    			<div id="team1"><h2>Aryan</h2></div>
-	    			<div id="team2"><h2></h2></div>
-	    		</div>
-	    	</div>
-	    </div>
-	    <div class="section" id="section3">
-	    	<div class="intro">
-	    		<h1>Configurable</h1>
-	    		<p>Plenty of options, methods and callbacks to use.</p>
-	    		<div id="colors2"></div>
-	    		<div id="colors3"></div>
-	    	</div>
-	    </div>
-	    <div class="section" id="section4">
-	    	<div class="intro">
-	    		<h1>Compatible</h1>
-	    		<p>Designed to work on tablet and mobile devices.</p>
-	    		<p>Oh! And its compatible with old browsers such as IE 8 or Opera 12!</p>
-	    	</div>
-	    </div>
-	</div>
-	<script type="text/javascript" src="resources/graph.js"></script>
+				</div> <!-- .cd-project-info -->
+			</li>
+
+			<li class="cd-single-project">
+				<div class="cd-title">
+					<h2>Teams</h2>
+					<p>Teams part of the Developement Process</p>
+				</div> <!-- .cd-title -->
+
+				<div class="cd-project-info">
+                    <div id="teams">
+	    				<div id="team1"></div>
+	    				<div id="team2"></div>
+	    			</div>
+				</div> <!-- .cd-project-info -->
+			</li>
+
+			<li class="cd-single-project">
+				<div class="cd-title">
+					<h2>Project 3</h2>
+					<p>Brief description of the project here</p>
+				</div> <!-- .cd-title -->
+
+				<div class="cd-project-info">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+					</p>
+				</div> <!-- .cd-project-info -->
+			</li>
+
+			<li class="cd-single-project">
+				<div class="cd-title">
+					<h2>Project 4</h2>
+					<p>Brief description of the project here</p>
+				</div> <!-- .cd-title -->
+
+				<div class="cd-project-info">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+					</p>
+				</div> <!-- .cd-project-info -->
+			</li>
+		</ul>
+		<a href="#0" class="cd-close">Close</a>
+		<a href="#0" class="cd-scroll">Scroll</a>
+	</div> <!-- .project-container -->
+<script src="resources/jquery.min.js"></script>
+<script src="resources/main.js"></script> <!-- Resource jQuery -->
+<script type="text/javascript" src="resources/graph.js"></script>
 	<script>
 		$(document).ready(function(){
 			graph("#team1","resources/team1.json")

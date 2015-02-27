@@ -1,5 +1,5 @@
 var width = 550
-var height = 550
+var height = 500
 function graph(div,json_data){
   var svg = d3.select(div).append("svg")
       .attr("width", width)
@@ -7,7 +7,7 @@ function graph(div,json_data){
 
   var force = d3.layout.force()
       .gravity(.05)
-      .distance(150)
+      .linkDistance(150)
       .charge(-800)
       .size([width, height]);
 
