@@ -15,22 +15,6 @@
 	<script type="text/javascript" src="resources/bootstrap.min.js"></script>
 	<script type="text/javascript" src="resources/d3.min.js"></script>
 	<title>Race Car</title>
-    <style>
-        #teams{
-    		display:flex;
-    		min-height:500px;
-    	}
-    	#team1{
-    		flex:1;
-    		margin-left: 5%;
-    		/*border:2px solid blue;*/
-    	}
-        #team2{
-    		flex:1;
-    		margin-right: 5%;
-    		/*border:2px solid black;*/
-    	}
-    </style>
 </head>
 <body>
 	<div class="projects-container">
@@ -69,9 +53,9 @@
 				</div> <!-- .cd-title -->
 
 				<div class="cd-project-info">
-                    <div id="teams">
-	    				<div id="team1"></div>
-	    				<div id="team2"></div>
+                    <div id="teams" class="row">
+	    				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="team1"></div>
+	    				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="team2"></div>
 	    			</div>
 				</div> <!-- .cd-project-info -->
 			</li>

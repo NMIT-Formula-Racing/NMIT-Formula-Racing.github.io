@@ -1,9 +1,12 @@
-var width = 550
-var height = 500
+var width = 700
+var height = 700
 function graph(div,json_data){
   var svg = d3.select(div).append("svg")
-      .attr("width", width)
-      .attr("height", height);
+      .attr({
+        "width": "100%",
+        "height": "100%"
+      })
+      .attr("viewBox", "0 0 " + width + " " + height )
 
   var force = d3.layout.force()
       .gravity(.05)
