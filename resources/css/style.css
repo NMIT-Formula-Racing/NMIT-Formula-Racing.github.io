@@ -68,7 +68,7 @@ Main Components
   left: 0;
   height: 25vh;
   width: 100%;
-  background-image: url("/resources/icons/img-1-small.jpg");
+  background-image: url("/resources/images/icons/img-1-small.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -85,7 +85,7 @@ Main Components
   top: 25vh;
 }
 .projects-container .cd-single-project:nth-of-type(2)::after {
-  background-image: url("/resources/icons/img-2-small.jpg");
+  background-image: url("/resources/images/icons/img-2-small.jpg");
 }
 .projects-container .cd-single-project:nth-of-type(2)::before {
   content: 'img/img-2-small.jpg';
@@ -94,19 +94,19 @@ Main Components
   top: 50vh;
 }
 .projects-container .cd-single-project:nth-of-type(3)::after {
-  background-image: url("/resources/icons/img-3-small.jpg");
+  background-image: url("/resources/images/icons/img-3-small.jpg");
 }
 .projects-container .cd-single-project:nth-of-type(3)::before {
-  content: '/resources/icons/img-3-small.jpg';
+  content: '/resources/images/icons/img-3-small.jpg';
 }
 .projects-container .cd-single-project:nth-of-type(4) {
   top: 75vh;
 }
 .projects-container .cd-single-project:nth-of-type(4)::after {
-  background-image: url("/resources/icons/img-4-small.jpg");
+  background-image: url("/resources/images/icons/img-4-small.jpg");
 }
 .projects-container .cd-single-project:nth-of-type(4)::before {
-  content: '/resources/icons/img-4-small.jpg';
+  content: '/resources/images/icons/img-4-small.jpg';
 }
 .projects-container .cd-single-project.is-loaded {
   /* move items in the viewport when background images have been loaded */
@@ -148,40 +148,40 @@ Main Components
     transition: width 0s;
   }
   .projects-container .cd-single-project:first-of-type::before {
-    content: url('/resources/icons/img-1-large.jpg');
+    content: url('/resources/images/icons/img-1-large.jpg');
   }
   .projects-container .cd-single-project:first-of-type::after {
-    background-image: url("/resources/icons/img-1-large.jpg");
+    background-image: url("/resources/images/icons/img-1-large.jpg");
   }
   .projects-container .cd-single-project:nth-of-type(2) {
     top: 0;
     left: 25vw;
   }
   .projects-container .cd-single-project:nth-of-type(2)::before {
-    content: url('/resources/icons/img-2-large.jpg');
+    content: url('/resources/images/icons/img-2-large.jpg');
   }
   .projects-container .cd-single-project:nth-of-type(2)::after {
-    background-image: url("/resources/icons/img-2-large.jpg");
+    background-image: url("/resources/images/icons/img-2-large.jpg");
   }
   .projects-container .cd-single-project:nth-of-type(3) {
     top: 0;
     left: 50vw;
   }
   .projects-container .cd-single-project:nth-of-type(3)::before {
-    content: url('/resources/icons/img-3-large.jpg');
+    content: url('/resources/images/icons/img-3-large.jpg');
   }
   .projects-container .cd-single-project:nth-of-type(3)::after {
-    background-image: url("/resources/icons/img-3-large.jpg");
+    background-image: url("/resources/images/icons/img-3-large.jpg");
   }
   .projects-container .cd-single-project:nth-of-type(4) {
     top: 0;
     left: 75vw;
   }
   .projects-container .cd-single-project:nth-of-type(4)::before {
-    content: url('/resources/icons/img-4-large.jpg');
+    content: url('/resources/images/icons/img-4-large.jpg');
   }
   .projects-container .cd-single-project:nth-of-type(4)::after {
-    background-image: url("/resources/icons/img-4-large.jpg");
+    background-image: url("/resources/images/icons/img-4-large.jpg");
   }
   .projects-container .cd-single-project::after {
     height: 100vh;
@@ -317,8 +317,7 @@ Main Components
   -webkit-transition: opacity 0.4s 0s, visibility 0s 0.4s;
   -moz-transition: opacity 0.4s 0s, visibility 0s 0.4s;
   transition: opacity 0.4s 0s, visibility 0s 0.4s;
-  //width:1000px;
-  //height:1000px;
+  
 }
 .is-full-width .cd-project-info {
   visibility: visible;
@@ -357,7 +356,7 @@ Main Components
   position: fixed;
   top: 30px;
   right: 5%;
-  background: url("/resources/icons/cd-icon-close-mobile.svg") no-repeat center center;
+  background: url("/resources/images/icons/cd-icon-close-mobile.svg") no-repeat center center;
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -ms-transform: scale(0);
@@ -366,7 +365,7 @@ Main Components
 }
 @media only screen and (min-width: 1170px) {
   .projects-container .cd-close {
-    background-image: url("/resources/icons/cd-icon-close-desktop.svg");
+    background-image: url("/resources/images/icons/cd-icon-close-desktop.svg");
   }
 }
 
@@ -379,11 +378,11 @@ Main Components
   -ms-transform: translateX(-50%) scale(0);
   -o-transform: translateX(-50%) scale(0);
   transform: translateX(-50%) scale(0);
-  background: url("/resources/icons/cd-icon-arrow-mobile.svg") no-repeat center center;
+  background: url("/resources/images/icons/cd-icon-arrow-mobile.svg") no-repeat center center;
 }
 @media only screen and (min-width: 1170px) {
   .projects-container .cd-scroll {
-    background-image: url("/resources/icons/cd-icon-arrow-desktop.svg");
+    background-image: url("/resources/images/icons/cd-icon-arrow-desktop.svg");
   }
 }
 
