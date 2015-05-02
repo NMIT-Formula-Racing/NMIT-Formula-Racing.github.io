@@ -33,6 +33,8 @@ function graph(div,json_data){
       .call(force.drag)
       .on("click",function(d){
         console.log(d.name);
+        $('.teamMember').text(d.name);
+        $('.basic').modal('show');
       });
 
   node.append("image")

@@ -16,7 +16,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "PT Sans", sans-serif;
-  color: #ffffff;
+  color: #000000;
   background-color: #101524;
 }
 
@@ -148,40 +148,40 @@ Main Components
     transition: width 0s;
   }
   .projects-container .cd-single-project:first-of-type::before {
-    content: url('/resources/images/icons/img-1-large.jpg');
+    content: url('http://3.bp.blogspot.com/-p6aK3egEVUA/Tm76xrbkj5I/AAAAAAAAAaA/Rhjhe8WCn6I/s1600/Jaguar-C-X16-Concept-Design-Sketch-2.jpg');
   }
   .projects-container .cd-single-project:first-of-type::after {
-    background-image: url("/resources/images/icons/img-1-large.jpg");
+    background-image: url("http://3.bp.blogspot.com/-p6aK3egEVUA/Tm76xrbkj5I/AAAAAAAAAaA/Rhjhe8WCn6I/s1600/Jaguar-C-X16-Concept-Design-Sketch-2.jpg");
   }
   .projects-container .cd-single-project:nth-of-type(2) {
     top: 0;
     left: 25vw;
   }
   .projects-container .cd-single-project:nth-of-type(2)::before {
-    content: url('/resources/images/icons/img-2-large.jpg');
+    content: url('http://2.bp.blogspot.com/-O1tfxfHqLPQ/UJb2KsUXYiI/AAAAAAAACQU/ffff6saqCcg/s1600/2011-Jaguar-C-X16-Concept-Design-Sketch-3.jpg');
   }
   .projects-container .cd-single-project:nth-of-type(2)::after {
-    background-image: url("/resources/images/icons/img-2-large.jpg");
+    background-image: url("http://2.bp.blogspot.com/-O1tfxfHqLPQ/UJb2KsUXYiI/AAAAAAAACQU/ffff6saqCcg/s1600/2011-Jaguar-C-X16-Concept-Design-Sketch-3.jpg");
   }
   .projects-container .cd-single-project:nth-of-type(3) {
     top: 0;
     left: 50vw;
   }
   .projects-container .cd-single-project:nth-of-type(3)::before {
-    content: url('/resources/images/icons/img-3-large.jpg');
+    content: url('http://th04.deviantart.net/fs70/PRE/f/2010/114/7/d/BMW_concept_car_sketch_by_VladBucur.jpg');
   }
   .projects-container .cd-single-project:nth-of-type(3)::after {
-    background-image: url("/resources/images/icons/img-3-large.jpg");
+    background-image: url("http://th04.deviantart.net/fs70/PRE/f/2010/114/7/d/BMW_concept_car_sketch_by_VladBucur.jpg");
   }
   .projects-container .cd-single-project:nth-of-type(4) {
     top: 0;
     left: 75vw;
   }
   .projects-container .cd-single-project:nth-of-type(4)::before {
-    content: url('/resources/images/icons/img-4-large.jpg');
+    content: url('http://www.carbodydesign.com/media/2010/12/Fiat-Mio-FCC-III-Concept-Design-Sketch-1.jpg');
   }
   .projects-container .cd-single-project:nth-of-type(4)::after {
-    background-image: url("/resources/images/icons/img-4-large.jpg");
+    background-image: url("http://www.carbodydesign.com/media/2010/12/Fiat-Mio-FCC-III-Concept-Design-Sketch-1.jpg");
   }
   .projects-container .cd-single-project::after {
     height: 100vh;
