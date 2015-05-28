@@ -1,0 +1,46 @@
+.slick-prev:before, .slick-next:before { 
+	color:black;
+}
+.node{
+	font-weight: bold;
+	font-size:1.2em;
+}
+.link {
+	stroke: #777;
+	stroke-width: 2px;
+}
+head, body{
+	background-color: #000000;
+}
+#first-section{
+	background-color: #E0E0E0;
+}
+#second-section{
+	background-color: #E0E0E0;
+}
+#third-section{
+	background-color: #E0E0E0;
+}
+#fourth-section{
+	background-color: #E0E0E0;
+}
+#first-section-subpage{
+	background-color: white;
+}
+#second-section-subpage{
+	background-color: white;
+}
+#third-section-subpage{
+	background-color: white;
+}
+#fourth-section-subpage{
+	background-color: white;
+}
+#gallery{
+	height:80vh;
+	width:80vw;
+}
+.img{
+	height:80vh;
+	width:80vw;
+}
