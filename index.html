@@ -16,6 +16,11 @@
 	<title>Race Car</title>
 </head>
 <body>
+	<center>
+	<div id="loader">
+    	<img src="https://s-media-cache-ak0.pinimg.com/originals/3d/80/64/3d8064758e54ec662e076b6ca54aa90e.jpg">
+	</div>
+	</center>
 	<div class="projects-container">
 		<ul>
 			<li class="cd-single-project section" id="first-section">
@@ -262,8 +267,14 @@
 	<script type="text/javascript" src="/resources/Semantic-ui/components/modal.js"></script>
 	<script type="text/javascript" src="/resources/Semantic-ui/components/accordion.js"></script>
 	<script>
-		$(document).ready(function(){
-			$('.ui.accordion').accordion();
+		$(window).load(function() {
+    		$("#loader").delay(3000).animate({
+        		opacity:0,
+        		width: 0,
+        		height:0
+    		}, 500);
+    		$("#loader").empty()
+    		$('.ui.accordion').accordion();
 			var teamData = $.getJSON("/resources/data/team.json",function(){
 				window.teamData = teamData.responseJSON
 				console.log(teamData)
@@ -281,7 +292,7 @@
 				cssEase: 'linear',
 				fade: true
 			});
-		});
+    	});
 	</script>
 </body>
 </html>
