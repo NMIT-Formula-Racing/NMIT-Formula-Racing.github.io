@@ -1,0 +1,76 @@
+{
+  "team1":{
+      "Chassis":[
+      {"name":"Name 1","description":"Team Rudra - Chassis Name 1","img":"anonymous.jpg","facebook-link":""},
+      {"name":"Name 2","description":"Team Rudra - Chassis Name 2","img":"anonymous.jpg","facebook-link":""},
+      {"name":"Name 3","description":"Team Rudra - Chassis Name 3","img":"anonymous.jpg","facebook-link":""}
+    ],
+    "Powertrain":[
+      {"name":"Name 1","description":"Napoleon Name 1","img":"anonymous.jpg","facebook-link":""},
+      {"name":"Name 2","description":"Napoleon Name 2","img":"anonymous.jpg","facebook-link":""},
+      {"name":"Name 3","description":"Napoleon Name 3","img":"anonymous.jpg","facebook-link":""}
+    ],
+    "Suspension":[
+      {"name":"Name 1","description":"Mlle.Baptistine Name 1","img":"anonymous.jpg","facebook-link":""},
+      {"name":"Name 2","description":"Mlle.Baptistine Name 2","img":"anonymous.jpg","facebook-link":""},
+      {"name":"Name 3","description":"Mlle.Baptistine Name 3","img":"anonymous.jpg","facebook-link":""}
+    ],
+    "Marketing & Data Acquisition":[
+      {"name":"Name 1","description":"Mme.Magloire Name 1","img":"anonymous.jpg","facebook-link":""},
+      {"name":"Name 2","description":"Mme.Magloire Name 2","img":"anonymous.jpg","facebook-link":""},
+      {"name":"Name 3","description":"Mme.Magloire Name 3","img":"anonymous.jpg","facebook-link":""}
+    ],
+    "Steering":[
+      {"name":"Name 1","description":"CountessdeLo Name 1","img":"anonymous.jpg","facebook-link":""},
+      {"name":"Name 2","description":"CountessdeLo Name 2","img":"anonymous.jpg","facebook-link":""},
+      {"name":"Name 3","description":"CountessdeLo Name 3","img":"anonymous.jpg","facebook-link":""}
+    ],
+    "Brakes":[
+      {"name":"Name 1","description":"CountessdeLo Name 1","img":"anonymous.jpg","facebook-link":""},
+      {"name":"Name 2","description":"CountessdeLo Name 2","img":"anonymous.jpg","facebook-link":""},
+      {"name":"Name 3","description":"CountessdeLo Name 3","img":"anonymous.jpg","facebook-link":""}
+    ],
+    "Sponsorship":[
+      {"name":"Name 1","description":"CountessdeLo Name 1","img":"anonymous.jpg","facebook-link":""},
+      {"name":"Name 2","description":"CountessdeLo Name 2","img":"anonymous.jpg","facebook-link":""},
+      {"name":"Name 3","description":"CountessdeLo Name 3","img":"anonymous.jpg","facebook-link":""}
+    ]
+  },
+  "team2":{
+    "Chassis":[
+      {"name":"Yeshodhara B","description":"Team Captain and Chassis Engineer <br> Ph No:+91 8792567452","facebook-link":"https://www.facebook.com/yeshodhara.bhaskar","img":"yeshodharab.JPG"},
+      {"name":"Yogeesh DN","description":"Chassis Engineer <br> Ph No:+91 9902348989","facebook-link":"https://www.facebook.com/dnyogeesh.turuvekere","img":"yogeesh.jpg"},
+      {"name":"Pavan Kumar A V","description":"Vice Captain, Chassis Engineer and Head Analyst <br> Ph No:+91 7795574812","facebook-link":"https://www.facebook.com/pavan.kumar.507","img":"pavankumar.jpg"}
+    ],
+    "Powertrain":[
+      {"name":"Abhilash P K","description":" Powertrain Lead <br> Ph No:+91 9900507256","facebook-link":"https://www.facebook.com/abhilash.kulkarni.566","img":"abhilash.jpg"},
+      {"name":"Suraj R","description":"Transmission Engineer<br> Ph No:+91 9008727452","facebook-link":"https://www.facebook.com/suraj.rock.3139","img":"suraj.jpg"},
+      {"name":"Sharath A","description":"Transmission Engineer<br> Ph No:+91 8970271021","facebook-link":"https://www.facebook.com/sharath.ashok.35","img":"sharath.jpg"}
+    ],
+    "Suspension":[
+      {"name":"Nikhil N","description":"Suspension Lead and Team Driver <br> Ph No:+91 9945587890","facebook-link":"https://www.facebook.com/nikhil.manjunath1","img":"nikhil.jpg"},
+      {"name":"Vilas D R","description":"Suspension Engineer and Team Driver<br> Ph No:+91 9738337178","facebook-link":"https://www.facebook.com/vilasdravindra","img":"vilas.jpg"},
+      {"name":"Pavan M S","description":"Suspension Engineer <br> Ph No:+91 9066247982","facebook-link":"https://www.facebook.com/sunag.pavan","img":"anonymous.jpg"}
+    ],
+    "Sponsorship":[
+      {"name":"Sundeep R","description":"Sponsorship Head <br> Ph No:+91 9591628690","facebook-link":"https://www.facebook.com/ra.sundeep","img":"anonymous.jpg"},
+      {"name":"Ranjith S","description":"Sponsorship Support <br> Ph No:+91 9980730900","facebook-link":"https://www.facebook.com/ranjit.khaire1","img":"ranjith.jpg"},
+      {"name":"Syed Masood","description":"Sponsorship Support <br> Ph No:+91 9901855172","facebook-link":"https://www.facebook.com/syed.masood.148","img":"syed.jpg"}
+    ],
+    "Steering":[
+      {"name":"Ketan S","description":"Steering Lead  <br> Ph No:+91 7406444455","facebook-link":"https://www.facebook.com/ket.roxz","img":"ketan.jpg"},
+      {"name":"Manish S","description":"Steering support Engineer <br> Ph No:+91 9620355615","facebook-link":"https://www.facebook.com/Manish2410","img":"manish.jpg"},
+      {"name":"Varun M","description":"Steering Support Engineer <br> Ph No:+91 8904016147","facebook-link":"https://www.facebook.com/varun.mallikarjun","img":"varun_m.jpg"}
+    ],
+    "Brakes":[
+      {"name":"Darshini T Gowda","description":"Brake Lead Engineer <br> Ph No:+91 9740185037","facebook-link":"https://www.facebook.com/darshini.t.gowda","img":"darshini.jpg"},
+      {"name":"Smitha R Gowda","description":"Brake Engineer <br> Ph No:+91 7899304615","facebook-link":"","img":"smitha.jpg"},
+      {"name":"Vishal P","description":"Brake Engineer <br> Ph No:+91 9535239160","facebook-link":"https://www.facebook.com/profile.php?id=100001655384591&fref=ts","img":"vishal.jpg"}
+    ],
+    "Marketing & Data Acquisition":[
+      {"name":"Prajwal M","description":"Marketing and Inventory Head <br> Ph No:+91 9035487932","facebook-link":"https://www.facebook.com/prajwal.raj.359","img":"prajwal_m.jpg"},
+      {"name":"Prajwal H V","description":"Inventory and Transport support <br> Ph No:+91 7411260980","facebook-link":"https://www.facebook.com/prajwal.gowda.587","img":"prajwal_h_v.jpg"},
+      {"name":"Abhilash P K","description":"<br> Ph No:+91 9900507256","facebook-link":"https://www.facebook.com/abhilash.kulkarni.566","img":"abhilash.jpg"}
+    ]
+  }
+}

@@ -4,14 +4,14 @@ function graph(div,json_data){
   var svg = d3.select(div).append("svg")
       .attr({
         "width": "100%",
-        "height": "100%"
+        "height": "90%"
       })
-      .attr("viewBox", "0 0 " + width + " " + height )
+      .attr("viewBox", "0 100 " + width + " " + height )
 
   var force = d3.layout.force()
       .gravity(.05)
       .linkDistance(150)
-      .charge(-800)
+      .charge(-1200)
       .size([width, height]);
 
   d3.json(json_data, function(error, json) {
@@ -24,7 +24,7 @@ function graph(div,json_data){
       .data(json.links)
       .enter().append("line")
       .attr("class", "link")
-      .style("stroke-width", function(d) { return Math.sqrt(d.value); });
+      .style("stroke-width", function(d) { return d.value; });
 
   var node = svg.selectAll(".node")
       .data(json.nodes)
@@ -33,12 +33,20 @@ function graph(div,json_data){
       .call(force.drag)
       .on("click",function(d){
         console.log(d.name);
-        $('.teamMember').text(d.name);
+        $('.sectionName').text(d.name);
+        var team = div.slice(1)
+        console.log(teamData[team][d.name].length)
+        for(var i=0;i<teamData[team][d.name].length;i++){
+          $('#person-name-'+(i+1).toString()).html(teamData[team][d.name][i]['name'])
+          $('#person-description-'+(i+1).toString()).html(teamData[team][d.name][i]['description'])
+          $('#facebook-link-'+(i+1).toString()).attr("href",teamData[team][d.name][i]['facebook-link'])
+          $('#person-img-'+(i+1).toString()).attr("src","/resources/images/members/"+teamData[team][d.name][i]['img'])
+        }
         $('.basic').modal('show');
       });
 
   node.append("image")
-      .attr("xlink:href", "http://png-1.findicons.com/files/icons/1579/devine/256/circle.png")
+      .attr("xlink:href", "https://cdn2.iconfinder.com/data/icons/gears-wheels-blades/512/car_brakes-512.png")
       .attr("x", -20)
       .attr("y", -20)
       .attr("width", 80)
