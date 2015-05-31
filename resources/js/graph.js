@@ -32,10 +32,8 @@ function graph(div,json_data){
       .attr("class", "node")
       .call(force.drag)
       .on("click",function(d){
-        console.log(d.name);
         $('.sectionName').text(d.name);
         var team = div.slice(1)
-        console.log(teamData[team][d.name].length)
         for(var i=0;i<teamData[team][d.name].length;i++){
           $('#person-name-'+(i+1).toString()).html(teamData[team][d.name][i]['name'])
           $('#person-description-'+(i+1).toString()).html(teamData[team][d.name][i]['description'])
@@ -46,7 +44,7 @@ function graph(div,json_data){
       });
 
   node.append("image")
-      .attr("xlink:href", "https://cdn2.iconfinder.com/data/icons/gears-wheels-blades/512/car_brakes-512.png")
+      .attr("xlink:href", "/resources/images/icons/brakes.png")
       .attr("x", -20)
       .attr("y", -20)
       .attr("width", 80)
