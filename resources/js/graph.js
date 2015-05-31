@@ -38,13 +38,13 @@ function graph(div,json_data){
           $('#person-name-'+(i+1).toString()).html(teamData[team][d.name][i]['name'])
           $('#person-description-'+(i+1).toString()).html(teamData[team][d.name][i]['description'])
           $('#facebook-link-'+(i+1).toString()).attr("href",teamData[team][d.name][i]['facebook-link'])
-          $('#person-img-'+(i+1).toString()).attr("src","/resources/images/members/"+teamData[team][d.name][i]['img'])
+          $('#person-img-'+(i+1).toString()).attr("src","resources/images/members/"+teamData[team][d.name][i]['img'])
         }
         $('.basic').modal('show');
       });
 
   node.append("image")
-      .attr("xlink:href", "/resources/images/icons/brakes.png")
+      .attr("xlink:href", "resources/images/icons/brakes.png")
       .attr("x", -20)
       .attr("y", -20)
       .attr("width", 80)
