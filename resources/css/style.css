@@ -78,7 +78,7 @@ Main Components
 }
 .projects-container .cd-single-project::before {
   /* never visible - this is used in jQuery to detect if the background image has been loaded  */
-  content: '../../resources/images/icons/img-1-small.jpg';
+  content: url('../images/icons/img-1-small.jpg');
   display: none;
 }
 .projects-container .cd-single-project:nth-of-type(2) {
@@ -88,7 +88,7 @@ Main Components
   background-image: url("../images/icons/img-2-small.jpg");
 }
 .projects-container .cd-single-project:nth-of-type(2)::before {
-  content: '../../resources/images/icons/img-2-small.jpg';
+  content: url('../images/icons/img-2-small.jpg');
 }
 .projects-container .cd-single-project:nth-of-type(3) {
   top: 50vh;
@@ -97,7 +97,7 @@ Main Components
   background-image: url("../images/icons/img-3-small.jpg");
 }
 .projects-container .cd-single-project:nth-of-type(3)::before {
-  content: '../../resources/images/icons/img-3-small.jpg';
+  content: url('../images/icons/img-3-small.jpg');
 }
 .projects-container .cd-single-project:nth-of-type(4) {
   top: 75vh;
@@ -106,7 +106,7 @@ Main Components
   background-image: url("../images/icons/img-4-small.jpg");
 }
 .projects-container .cd-single-project:nth-of-type(4)::before {
-  content: '../../resources/images/icons/img-4-small.jpg';
+  content: url('../images/icons/img-4-small.jpg');
 }
 .projects-container .cd-single-project.is-loaded {
   /* move items in the viewport when background images have been loaded */

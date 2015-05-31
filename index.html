@@ -26,7 +26,7 @@
         		opacity:0,
         		width: 0,
         		height:0
-    		}, 500);
+    		}, 500, function(){$("#loader").detach();});
     	});
 	</script>
 	<div class="projects-container">
@@ -274,14 +274,15 @@
 	<script type="text/javascript" src="resources/Semantic-ui/components/modal.js"></script>
 	<script type="text/javascript" src="resources/Semantic-ui/components/accordion.js"></script>
 	<script>
-		$(document).ready(function(){
-			$("#loader").empty()
+		$(window).load(function(){
 			$('.ui.accordion').accordion();
 			var teamData = $.getJSON("resources/data/team.json",function(){
 				window.teamData = teamData.responseJSON
 				graph("#team1","resources/data/team1.json")
 				graph("#team2","resources/data/team2.json")
 			})
+		});
+		$(document).ready(function(){
 			$('#gallery').slick({
 				dots: true,
 				autoplay: true,
@@ -291,7 +292,7 @@
 				swipe: true,
 				arrows: true
 			});
-		});
+		})
 	</script>
 </body>
 </html>
