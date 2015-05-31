@@ -13,14 +13,22 @@
 	<link rel="stylesheet" type="text/css" href="/resources/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="/resources/slick/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="/resources/css/main.css"/>
-	<title>Race Car</title>
+	<script src="resources/js/jquery.min.js"></script>
+	<title>Team Arion</title>
 </head>
 <body>
-	<center>
-	<div id="loader">
-    	<img src="https://s-media-cache-ak0.pinimg.com/originals/3d/80/64/3d8064758e54ec662e076b6ca54aa90e.jpg">
+	<div class="ui segment" id="loader">
+    	<img class="ui centered image" src="https://s-media-cache-ak0.pinimg.com/originals/3d/80/64/3d8064758e54ec662e076b6ca54aa90e.jpg">
 	</div>
-	</center>
+	<script>
+		$(window).load(function() {
+    		$("#loader").delay(3000).animate({
+        		opacity:0,
+        		width: 0,
+        		height:0
+    		}, 500);
+    	});
+	</script>
 	<div class="projects-container">
 		<ul>
 			<li class="cd-single-project section" id="first-section">
@@ -187,7 +195,7 @@
 							<div class ="img"><img data-lazy="/resources/images/nitte/17.jpg"></div>
 							<div class ="img"><img data-lazy="/resources/images/nitte/18.jpg"></div>
 							<div class ="img"><img data-lazy="/resources/images/nitte/19.jpg"></div>
-							<div class ="img"><img data-lazy="/resources/images/nitte/20.jpg"></div>
+							<div class ="img"><img data-lazy="/resources/images/nitte/20.jpeg"></div>
 						</div>
 					</center>
 				</div> <!-- .cd-project-info -->
@@ -258,7 +266,6 @@
 		</div>
 	</div>
 	<script src="/resources/js/modernizr.js"></script> <!-- Modernizr -->
-	<script src="resources/js/jquery.min.js"></script>
 	<script src="resources/js/main.js"></script> <!-- Resource jQuery -->
 	<script type="text/javascript" src="/resources/slick/slick.min.js"></script>
 	<script type="text/javascript" src="/resources/js/d3.min.js"></script>
@@ -267,17 +274,11 @@
 	<script type="text/javascript" src="/resources/Semantic-ui/components/modal.js"></script>
 	<script type="text/javascript" src="/resources/Semantic-ui/components/accordion.js"></script>
 	<script>
-		$(window).load(function() {
-    		$("#loader").delay(3000).animate({
-        		opacity:0,
-        		width: 0,
-        		height:0
-    		}, 500);
-    		$("#loader").empty()
-    		$('.ui.accordion').accordion();
+		$(document).ready(function(){
+			$("#loader").empty()
+			$('.ui.accordion').accordion();
 			var teamData = $.getJSON("/resources/data/team.json",function(){
 				window.teamData = teamData.responseJSON
-				console.log(teamData)
 				graph("#team1","/resources/data/team1.json")
 				graph("#team2","/resources/data/team2.json")
 			})
@@ -288,11 +289,9 @@
 				fade: true,
 				lazyLoad: 'ondemand',
 				swipe: true,
-				arrows: true,
-				cssEase: 'linear',
-				fade: true
+				arrows: true
 			});
-    	});
+		});
 	</script>
 </body>
 </html>
