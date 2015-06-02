@@ -1,27 +1,61 @@
 # Arion-Website
 Website for Team Arion SAE-Supra
 
-## Functionality :
-  * Main Page -> Slideshow
-  * Teams -> Team Specification
-  * Events
-  * Contact Us
-  * Downloads
+## Website Layout :
+
+  * ### Inception
+      * Inspiration and Motivation
+      * Birth of Team Arion
+      * The Journey
+
+  * ### Team
+      * Team Rudra
+      * Team Arion
+
+  * ### Our Sponsors
+      * Platinum Sponsors
+      * Gold Sponsors
+      * Silver Sponsors
+      * Bronze Sponsors
+
+  * ### Gallery
 
 ## Program Details :
+
+* ### Client Side
+
   * Written in HTML, CSS, Javascript.
-  * Main Page built using PagePiling.js.
-  * Description on the Teams Involved using D3.js.
-  * Slideshow on the Car Development and the Team using fotoroma.js
-  * JQuery Utilised for the Functionality of the Plugins.
-  * Bootstrap CSS and Js Utilised for the Webpage.
+  * Description on the Teams Involved using D3.js and modal windows for individual sub systems.
+  * Slideshow on the Car Development and the Team using fotoroma.js.
+  * JQuery Utilised for the Functionality of the Plugins and DOM Manipulation.
+  * Semantic-UI utilised for the Webpage theming, modal windows, accordion, responsive grid.
 
-## Working :
-  * https://powerful-thicket-6867.herokuapp.com/
+* ### Server Side
 
-## To Do :
-  * Implementation of the Car Theme onto the Site.
-  * PlaceHolders should be replaced with actual Info.
-  * Events Page should be Built.
-  * Contact Us Page should be Built.
-  * Downloads Page should be Built.
+  * Python usage for basic server [ python2 ]
+  * CherryPy Usage for Simplistic Web Framework.
+  * Routes
+    * / -> index.html
+    * /resources -> rendered to satisfy index.html dependencies
+
+##Libraries Utilised
+
+  * ### Client Side
+      * Jquery
+      * D3.js -> Force Directed Graph [ Members ]
+      * Fotorama.js -> Carousel [ Gallery ]
+      * Semantic UI -> Modal, Accordion, Responsive Grid, Basic Theme
+
+  * ### Server Side
+      * Jinja2 -> Templating Engine
+      * CherryPy -> Simplistic Web Framework
+
+## Execution :
+```
+  > python2 server.py
+  > chromium --app=http://localhost:5000
+```
+
+## Live Website :
+
+  * http://nmitformularacing.in
