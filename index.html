@@ -10,11 +10,11 @@
 	<link rel="stylesheet" type="text/css" href="resources/css/style.css"> <!-- Resource style -->
 	<link rel="stylesheet" type="text/css" href="resources/Semantic-ui/semantic.css"/>
 	<link rel="stylesheet" type="text/css" href="resources/Semantic-ui/components/modal.css"/>
-	<link rel="stylesheet" type="text/css" href="resources/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="resources/slick/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="resources/css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="resources/Fotorama/fotorama.css"/> <!-- 3 KB -->
 	<script type="text/javascript" src="resources/js/jquery.min.js"></script>
 	<title>Team Arion</title>
+	<link href="favicon.ico" rel="icon" type="image/x-icon" />
 </head>
 <body>
 	<div class="ui segment" id="loader">
@@ -175,27 +175,26 @@
 
 				<div class="cd-project-info" id="fourth-section-subpage">
 					<center>
-						<div id="gallery">
-							<div class ="img"><img data-lazy="resources/images/nitte/1.jpg"></div>
-							<div class ="img"><img data-lazy="resources/images/nitte/2.jpg"></div>
-							<div class ="img"><img data-lazy="resources/images/nitte/3.jpg"></div>
-							<div class ="img"><img data-lazy="resources/images/nitte/4.jpg"></div>
-							<div class ="img"><img data-lazy="resources/images/nitte/5.jpg"></div>
-							<div class ="img"><img data-lazy="resources/images/nitte/6.jpg"></div>
-							<div class ="img"><img data-lazy="resources/images/nitte/7.jpg"></div>
-							<div class ="img"><img data-lazy="resources/images/nitte/8.jpg"></div>
-							<div class ="img"><img data-lazy="resources/images/nitte/9.jpg"></div>
-							<div class ="img"><img data-lazy="resources/images/nitte/10.jpg"></div>
-							<div class ="img"><img data-lazy="resources/images/nitte/11.jpg"></div>
-							<div class ="img"><img data-lazy="resources/images/nitte/12.jpg"></div>
-							<div class ="img"><img data-lazy="resources/images/nitte/13.jpg"></div>
-							<div class ="img"><img data-lazy="resources/images/nitte/14.jpg"></div>
-							<div class ="img"><img data-lazy="resources/images/nitte/15.jpg"></div>
-							<div class ="img"><img data-lazy="resources/images/nitte/16.jpg"></div>
-							<div class ="img"><img data-lazy="resources/images/nitte/17.jpg"></div>
-							<div class ="img"><img data-lazy="resources/images/nitte/18.jpg"></div>
-							<div class ="img"><img data-lazy="resources/images/nitte/19.jpg"></div>
-							<div class ="img"><img data-lazy="resources/images/nitte/20.jpeg"></div>
+						<div id="gallery" class="fotorama" data-nav="thumbs" data-fit="cover" data-width="80%" data-ratio="1100/600" data-transition="crossfade" data-loop="true" data-autoplay="true" data-auto="false" data-allowfullscreen="true" data-shuffle="true" data-keyboard="true" data-arrows="true" data-click="true" data-swipe="true" >
+							<a href="resources/images/nitte/1.jpg" data-caption="1"></a>
+							<a href="resources/images/nitte/2.jpg" data-caption="2"></a>
+							<a href="resources/images/nitte/3.jpg" data-caption="3"></a>
+							<a href="resources/images/nitte/4.jpg" data-caption="4"></a>
+							<a href="resources/images/nitte/5.jpg" data-caption="5"></a>
+							<a href="resources/images/nitte/6.jpg" data-caption="6"></a>
+							<a href="resources/images/nitte/7.jpg" data-caption="7"></a>
+							<a href="resources/images/nitte/8.jpg" data-caption="8"></a>
+							<a href="resources/images/nitte/9.jpg" data-caption="9"></a>
+							<a href="resources/images/nitte/10.jpg" data-caption="1O"></a>
+							<a href="resources/images/nitte/11.jpg" data-caption="11"></a>
+							<a href="resources/images/nitte/12.jpg" data-caption="12"></a>
+							<a href="resources/images/nitte/13.jpg" data-caption="13"></a>
+							<a href="resources/images/nitte/14.jpg" data-caption="14"></a>
+							<a href="resources/images/nitte/15.jpg" data-caption="15"></a>
+							<a href="resources/images/nitte/16.jpg" data-caption="16"></a>
+							<a href="resources/images/nitte/17.jpg" data-caption="17"></a>
+							<a href="resources/images/nitte/18.jpg" data-caption="18"></a>
+							<a href="resources/images/nitte/19.jpg" data-caption="19"></a>
 						</div>
 					</center>
 				</div> <!-- .cd-project-info -->
@@ -267,12 +266,12 @@
 	</div>
 	<script type="text/javascript" src="resources/js/modernizr.js"></script> <!-- Modernizr -->
 	<script type="text/javascript" src="resources/js/main.js"></script> <!-- Resource jQuery -->
-	<script type="text/javascript" src="resources/slick/slick.min.js"></script>
 	<script type="text/javascript" src="resources/js/d3.min.js"></script>
 	<script type="text/javascript" src="resources/js/graph.js"></script>
 	<script type="text/javascript" src="resources/Semantic-ui/semantic.js"></script>
 	<script type="text/javascript" src="resources/Semantic-ui/components/modal.js"></script>
 	<script type="text/javascript" src="resources/Semantic-ui/components/accordion.js"></script>
+	<script type="text/javascript" src="resources/Fotorama/fotorama.js"></script>
 	<script>
 		$(window).load(function(){
 			$('.ui.accordion').accordion();
@@ -283,15 +282,7 @@
 			})
 		});
 		$(document).ready(function(){
-			$('#gallery').slick({
-				dots: true,
-				autoplay: true,
-				speed: 100,
-				fade: true,
-				lazyLoad: 'ondemand',
-				swipe: true,
-				arrows: true
-			});
+			$('.fotorama').fotorama();
 		})
 	</script>
 </body>

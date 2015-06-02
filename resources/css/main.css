@@ -37,12 +37,8 @@ head, body{
 	background-color: white;
 }
 #gallery{
-	height:80vh;
-	width:80vw;
-}
-.img{
-	height:80vh;
-	width:80vw;
+    width:80vw;
+    height:80vh;
 }
 #loader{
 	background-color: #0C0C0C;
